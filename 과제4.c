@@ -1,12 +1,13 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 int main(void)
 {
 	printf("Input : ");
-	float num1, num2, res;
-	char i;
-	scanf_s("%f %c %f", &num1, &i, &num2);
-	switch (i) {
+	double num1, num2, res;
+	char oper;
+	scanf("%lf %c %lf", &num1, &oper, &num2);//띄어쓰기로 연산자와 숫자를 구분하여 입력받는다.
+	switch (oper) {//연산자의 종류에 따라 덧셈,뺄셈,곱셈,나눗셈,거듭제곱을 진행한다.
 	case '+':
 		res = num1 + num2;
 		break;
@@ -26,5 +27,5 @@ int main(void)
 			res *= num1;
 		}
 	}
-	printf("%.2f %c %.2f = %.2f",num1, i, num2, res);
+	printf("%.2lf %c %.2lf = %.2lf",num1, oper, num2, res);//문제의 예시처럼 소수점 두번째 자리까지 나타내게 하였다
 }
