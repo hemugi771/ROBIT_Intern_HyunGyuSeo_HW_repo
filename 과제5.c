@@ -16,7 +16,7 @@ int main(void)
 					}
 				}
 			else {//세로줄 별 개수 줄어듦(가운데를 넘은 때부터 맨 끝까지)
-					if (j<2*a-i||j>i) {
+					if (j<=2*a-i||j>=i) {
 						printf("*");
 					}
 					else {

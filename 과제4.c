@@ -18,7 +18,7 @@ int main(void)
 		res = num1 * num2;
 		break;
 	case '/':
-		if (num2 == 0) { break; }
+		if (num2 == 0) { printf("0으로 나눌 수 없습니다."); return 0; }//예외 처리
 		res = num1 / num2;
 		break;
 	default:

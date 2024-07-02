@@ -20,8 +20,8 @@ int main(void)
 	for (int i = 0; i < r; i++) {
 		nr *= n;
 	}
-	printf("순열 = %d\n", N/NR);
-	printf("중복순열 = %d\n", nr);
-	printf("조합 = %d\n", N/(NR*R));
-	printf("중복조합 = %d\n", NR1/(N*R/n));//n!/n = (n-1)!
+	printf("순열 : %d\n", N/NR);
+	printf("중복순열 : %d\n", nr);
+	printf("조합 : %d\n", N/(NR*R));
+	printf("중복조합 : %d\n", NR1/(N*R/n));//n!/n = (n-1)!
 }
